@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>People</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+  <div id="modal">
+   <div class="row">
+     <div class="col l6 offset-l3">
+       <article>
+        <div class="row">
+          <div class="col l11">
+            <h2>Contactos</h2>
+          </div>
+          <div class="col l1">
+            <a class="btn-floating waves-effect waves-light red lighten-2" id="close"><i class="white-text small material-icons">close</i></a>
+          </div>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s9 offset-s1">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="name" type="text" class="validate">
+                  <label for="icon_prefix">Nombre</label>
+                </div>
+                <div class="input-field col s9 offset-s1">
+                  <i class="material-icons prefix">phone</i>
+                  <input id="phone" type="tel" class="validate">
+                  <label for="icon_telephone">Telefono</label>
+                </div>
+                <div class="input-field col s9 offset-s1">
+                  <i class="material-icons prefix">email</i>
+                  <input id="email" type="email" class="validate">
+                  <label for="mail">Email</label>
+                </div>
+                <div class="col s9 offset-s1 save-btn">
+                  <a class="waves-effect waves-light btn red lighten-2" id="save">Guardar</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+       </article>
+     </div>
+   </div>
+  </div>
+	<header>
+		<nav>
+	    <div class="nav-wrapper">
+	      <a href="#" class="brand-logo">Lista de Contactos</a>
+	      <ul id="nav-mobile" class="right hide-on-med-and-down">
+	        <li><a class="btn-floating waves-effect waves-light white" id="add"><i class="red-text lighten-2 small material-icons">add</i></a></li>
+	        <li><a class="btn-floating waves-effect waves-light white"><i class="red-text lighten-2 small material-icons">search</i></a></li>
+	      </ul>
+	    </div>
+	  </nav>
+	</header>
+  <section>
+    <div class="container">
+      <div class="row" id="contacts"></div>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>
